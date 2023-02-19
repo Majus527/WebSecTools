@@ -25,12 +25,14 @@ SECRET_KEY = 'o*y3^s$ntkpwmrl_4y=xmbg@vmd#j_y41)_rxi0k=vs5=$j&vr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Application definition
 
 INSTALLED_APPS = [
+    'simpleui',
+    'password_reset',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +42,9 @@ INSTALLED_APPS = [
     'auxiliary',        # 辅助模块
     'webscan',          # web扫描模块
     'login',            # 登录注册模块
+    'webscan_backend',  # web扫描 后端支持模块
+    'vulnscan',         # 漏洞扫描模块
+    'dirscan',          # 目录扫描模块
 ]
 
 MIDDLEWARE = [
@@ -122,5 +127,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+LOGIN_URL = '/login/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# 重设密码功能邮箱配置
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25                             # 发件箱的smtp服务器端口
+EMAIL_HOST_USER = '1564541144@qq.com'       # 邮箱账号
+EMAIL_HOST_PASSWORD = "wnnhaeggslshjhgj"     # 邮箱授权码
+EMAIL_USE_TLS = True                        # 这里必须是 True，否则发送不成功
+EMAIL_FROM = '1564541144@qq.com'            # 邮箱账号
+DEFAULT_FROM_EMAIL = '1564541144@qq.com'    # 邮箱账号
+
+
+STATICFILES_DIRS = (
+    ('css', os.path.join(STATIC_ROOT, 'css').replace('\\', '/')),
+    ('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
+    ('images', os.path.join(STATIC_ROOT, 'images').replace('\\', '/')),
+)

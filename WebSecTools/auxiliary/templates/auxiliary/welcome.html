@@ -15,14 +15,14 @@
 		<header class="header-global">
 			<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
 				<div class="container">
-					<a class="navbar-brand mr-lg-5" href="#">
-                        <img alt="Brand" style="float: left" src="{% static '/auxiliary/img/hackIco.png' %}"/>
+					<a class="navbar-brand mr-lg-5" href="{% url 'index' %}">
+                        <img al="Brand" style="float: left" src="{% static '/auxiliary/img/hackIco.png' %}"/>
 						<h4 class="text-white">Sec-Tools</h4>
 					</a>
 					<div class="navbar-collapse collapse" id="navbar_global">
 						<ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
 							<li class="nav-item d-none d-lg-block ml-lg-4">
-                                <a href="#" class="btn btn-neutral btn-icon">
+                                <a href="{% url 'login' %}" class="btn btn-neutral btn-icon">
 									<span class="btn-inner--icon"><i class="fas fa-user-circle" style="zoom: 1.3"></i></span>
                                     <span class="nav-link-inner--text">Sign in</span>
 								</a>
@@ -255,10 +255,10 @@
                       <div class="col-md-6">
                         <ul class="nav nav-footer justify-content-end">
                           <li class="nav-item">
-                            <a href="#" class="nav-link" target="_blank" _msthash="1881139" _msttexthash="11453351">Documentation</a>
+                            <a href="{% url 'docs' %}" class="nav-link" target="_blank" _msthash="1881139" _msttexthash="11453351">Documentation</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link" target="_blank" _msthash="1881854" _msttexthash="9552686">FAQ</a>
+                            <a href="{% url 'about' %}" class="nav-link" target="_blank" _msthash="1881854" _msttexthash="9552686">FAQ</a>
                           </li>
                           <li class="nav-item">
                             <a href="https://github.com/Majus527/WebSecTools" class="nav-link" target="_blank" _msthash="1882569" _msttexthash="4381390">Source code</a>

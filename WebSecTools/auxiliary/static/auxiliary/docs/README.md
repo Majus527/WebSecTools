@@ -16,10 +16,10 @@
 		  <td style="text-align:center;">吧唧</td>
       </tr>
     <tr>
-		<td style="text-align:center;" ><img class="inverted" width="200" src="static/img/touxiang/smile.jpg"></td>    
-		<td style="text-align:center;"><img class="inverted" width="200" src="static/img/touxiang/cloud.jpeg"></td>  
-		<td style="text-align:center;" ><img class="inverted" width="200" src="static/img/touxiang/dog.jpg"></td>
-		<td style="text-align:center;"><img class="inverted" width="200" src="static/img/touxiang/yellowdog.jpeg"></td>  
+		<td style="text-align:center;" ><img class="inverted" width="200" src="static/auxiliary/img/touxiang/smile.jpg"></td>    
+		<td style="text-align:center;"><img class="inverted" width="200" src="static/auxiliary/img/touxiang/cloud.jpeg"></td>  
+		<td style="text-align:center;" ><img class="inverted" width="200" src="static/auxiliary/img/touxiang/dog.jpg"></td>
+		<td style="text-align:center;"><img class="inverted" width="200" src="static/auxiliary/img/touxiang/yellowdog.jpeg"></td>  
    </tr>
  </tbody></table>
 
@@ -117,35 +117,35 @@
   </thead>
   <tbody>
     <tr>
-      <td><img src="static/img/browsers/edge.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Edge</font></td>
+      <td><img src="static/auxiliary/img/browsers/edge.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Edge</font></td>
       <td>last 3 versions</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/firefox.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Firefox</font></td>
+      <td><img src="static/auxiliary/img/browsers/firefox.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Firefox</font></td>
       <td>last 3 versions, ESR</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/chrome.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Chrome</font></td>
+      <td><img src="static/auxiliary/img/browsers/chrome.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Chrome</font></td>
       <td>last 3 versions</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/safari.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Safari</font></td>
+      <td><img src="static/auxiliary/img/browsers/safari.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Safari</font></td>
       <td>last 3 versions</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/opera.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Opera</font></td>
+      <td><img src="static/auxiliary/img/browsers/opera.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Opera</font></td>
       <td>last 3 versions</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/electron.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Electron</font></td>
+      <td><img src="static/auxiliary/img/browsers/electron.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Electron</font></td>
       <td>last 3 versions</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/brave.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Brave</font></td>
+      <td><img src="static/auxiliary/img/browsers/brave.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Brave</font></td>
       <td>last 3 versions</td>
     </tr>
     <tr>
-      <td><img src="static/img/browsers/vivaldi.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Vivaldi</font></td>
+      <td><img src="static/auxiliary/img/browsers/vivaldi.svg" width="24" height="24" class="me-2"><font _mstmutation="1"> Vivaldi</font></td>
       <td>last 3 versions</td>
     </tr>
   </tbody>
@@ -155,7 +155,7 @@
      
 ## 赞助💰
 
-如果你觉得对你有帮助，你可以赞助我一杯冰可乐！，你的支持是我们前进路上最大的动力！嘻嘻🤭
+如果你觉得对你有帮助，你可以赞助我一杯冰可乐！，你的支持是我前进路上最大的动力！嘻嘻🤭
 
 <table>
   <tbody>
@@ -164,7 +164,7 @@
          <td style="text-align:center;">微信支付</td>
      </tr>
    <tr>
-    <td style="text-align:center;" ><img width="200" src="static/img/zhifu/zhifubao.jpg"></td>    
-      <td style="text-align:center;"><img width="200" src="static/img/zhifu/weixin.png"></td>     
+    <td style="text-align:center;" ><img width="200" src="static/auxiliary/img/zhifu/zhifubao.jpg"></td>    
+      <td style="text-align:center;"><img width="200" src="static/auxiliary/img/zhifu/weixin.png"></td>     
   </tr>
 </tbody></table>

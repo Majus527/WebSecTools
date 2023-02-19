@@ -28,7 +28,7 @@
                     </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="{% url 'login_out' %}">
                             <i class="fas fa-sign-out-alt" style="zoom: 1.0;padding: 5px;"></i>注销
                         </a>
                   </div>
@@ -40,7 +40,7 @@
                     </div>
                     </a>
                   <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="{% url 'login' %}">
                         <i class="fas fa-user-circle" style="zoom: 1.0;padding: 5px;"></i>登录
                     </a>
                      <div class="dropdown-divider"></div>
@@ -62,7 +62,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#" >
+                  <a class="nav-link " href="{% url 'vulnscan' %}" >
                     <span class="d-md-none d-lg-inline-block"><i class="fa fa-bug" style="zoom: 1.0;padding: 5px;"></i></span>
                     <span class="nav-link-title">漏洞扫描</span>
                   </a>
@@ -74,19 +74,19 @@
                   </a>
                   <ul class="dropdown-menu">
                       <li >
-                      <a class="dropdown-item" href="#" >
+                      <a class="dropdown-item" href="{% url 'portscan' %}" >
                           <span class="d-md-none d-lg-inline-block"><i class="fas fa-search" style="zoom: 1.0;padding: 5px;"></i></span>
                           <span class="nav-link-title">端口扫描</span>
                       </a>
                     </li>
                       <li >
-                      <a class="dropdown-item" href="#" >
+                      <a class="dropdown-item" href="{% url 'dir-search' %}" >
                           <span class="d-md-none d-lg-inline-block"><i class="fas fa-stream" style="zoom: 1.0;padding: 5px;"></i></span>
                           <span class="nav-link-title">目录识别</span>
                       </a>
                     </li>
                       <li>
-                      <a class="dropdown-item"  href="#" >
+                      <a class="dropdown-item"  href="{% url 'fingerprint' %}" >
                         <span class="d-md-none d-lg-inline-block"><i class="fas fa-fingerprint" style="zoom: 1.0;padding: 5px;"></i></span>
                         <span class="nav-link-title">指纹识别</span>
                       </a>
@@ -100,19 +100,19 @@
                   </a>
                   <ul class="dropdown-menu">
                       <li >
-                      <a class="dropdown-item" href="#" >
+                      <a class="dropdown-item" href="{% url 'subdomain' %}" >
                           <span class="d-md-none d-lg-inline-block"><i class="fas fa-project-diagram" style="zoom: 1.0;padding: 5px;"></i></span>
                           <span class="nav-link-title">域名探测</span>
                       </a>
                     </li>
                       <li>
-                          <a class="dropdown-item" href="#" >
+                          <a class="dropdown-item" href="{% url 'webside' %}" >
                               <span class="d-md-none d-lg-inline-block"><i class="fas fa-network-wired" style="zoom: 1.0;padding: 5px;"></i></span>
                               <span class="nav-link-title">旁站探测</span>
                           </a>
                       </li>
                       <li >
-                          <a class="dropdown-item" href="#" >
+                          <a class="dropdown-item" href="{% url 'infoleak' %}" >
                               <span class="d-md-none d-lg-inline-block"><i class="fas fa-compass" style="zoom: 1.0;padding: 5px;"></i></span>
                               <span class="nav-link-title">信息泄露</span>
                           </a>

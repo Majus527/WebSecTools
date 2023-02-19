@@ -19,5 +19,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('auxiliary.urls')),    # 辅助模块
-    path('', include('login.urls'))         # 登录注册模块
+    path('', include('login.urls')),        # 登录注册模块
+    path('', include('webscan.urls')),      # web扫描模块
+    path('', include('vulnscan.urls')),     # 漏洞检测
+    path('', include('dirscan.urls')),      # 目录识别
+    path('webscan_backend/', include('webscan_backend.urls')),   # 后端接口**
 ]

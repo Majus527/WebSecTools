@@ -51,3 +51,7 @@ def navigation(request):
 def docs(request):
     """文档页"""
     return render(request, 'auxiliary/docs.html')
+
+def about(request):
+    """关于"""
+    return render(request, 'auxiliary/about.html')

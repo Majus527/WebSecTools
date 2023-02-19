@@ -1,6 +1,9 @@
+from django.contrib.auth import authenticate, logout
+from django.contrib.auth import login as Login
 from django.shortcuts import render, redirect
 
 from login.tools.forms import RegisterForm
+
 
 
 # Create your views here.
@@ -27,9 +30,32 @@ def register(request):
     # 渲染模板
     # 如果用户正在访问注册页面，则渲染的是一个空的注册表单
     # 如果用户通过表单提交注册信息，但是数据验证不合法，则渲染的是一个带有错误信息的表单
-    return render(request, 'register.html', context={'form': form})
+    return render(request, 'login/register.html', context={'form': form})
 
 
+def login(request):
+    msg = {
+        'site_title': "Sec-tools",
+        'site_header': "Sec-tools 登录",
+        'error': '',
+        'color': 'transparent',
+    }
+    if request.POST:
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(username=username, password=password)
+        if user is None:
+            msg['error'] = "用户名或密码错误！"
+            msg['color'] = "#fef0f0"
+        else:
+            Login(request, user)
+            return redirect("/index")
+        # print(user)
+        # print(msg)
+    return render(request, "login/login.html", msg)
 
 
+def login_out(request):
+    logout(request)  # 注销
+    return redirect("/index")  # 页面跳转
 
