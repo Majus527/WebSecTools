@@ -1,0 +1,2 @@
+2023-02-28 16:18:55,332 views.py[line:32] INFO M:POST P:/webscan_backend/port_scan UPOST:<QueryDict: {'ip': ['127.0.0.1']}> SC:200 UIP:127.0.0.1 RDATA:['http:80', 'Virtualmin/Webmin:10000', 'http:81', 'Vmware:902', 'SMB:445', 'Unknown:135']
+2023-02-28 18:05:24,531 views.py[line:49] INFO M:POST P:/webscan_backend/webweight UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:PC权重(10)，移动权重(10)，预计来路(10058686 ~ 12145636)  --数据来源于aizhan.com

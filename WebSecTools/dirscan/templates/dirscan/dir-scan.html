@@ -176,7 +176,7 @@
 {% endblock %}
 
 {% block js %}
-    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'auxiliary/js/jquery.min.js' %}"></script>
     <!-- 点击查询按钮页面向下滑到底部 依赖jquery -->
     <script type="text/javascript">
         jQuery(document).ready(function($){
@@ -192,7 +192,7 @@
             });
     </script>
     <!-- 消息弹层组件 依赖jquery -->
-    <script src="{% static 'plugins/layer/layer.js' %}"></script>
+    <script src="{% static 'auxiliary/plugins/layer/layer.js' %}"></script>
     <!--自定义扫描选项-->
     <script>
         {#前缀-动态添加输入框#}
@@ -236,7 +236,7 @@
             $(".scan-btn").click(function(){
               layer.msg('正在扫描，请稍后...',{icon: 1,offset: '220px',area: ['200px', '70px']});
                   {#function(){setTimeout(window.location.href="#",2000);}#}
-                  window.setTimeout("window.location='#'",30000);
+              window.setTimeout("window.location='{% url 'dir-result' %}'",30000);
               $('.jincheng').show();
               $('tbody').html('<tr><td><div class="hr-text">正在扫描，请耐心等待 </div><div class="progress progress-lg progress-bar-striped active"><div class="progress-bar progress-bar-indeterminate"></div></div></td></tr>');
             });

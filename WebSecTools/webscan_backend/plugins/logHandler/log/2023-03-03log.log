@@ -1,0 +1,9 @@
+2023-03-03 16:30:55,012 views.py[line:49] INFO M:POST P:/webscan_backend/webweight UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:获取数据失败，请稍再试
+2023-03-03 16:30:55,025 views.py[line:76] INFO M:POST P:/webscan_backend/whatcms UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:未能识别或非cms框架搭建
+2023-03-03 16:30:55,027 views.py[line:90] INFO M:POST P:/webscan_backend/baseinfo UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:{'code': 400, 'msg': '网络错误'}
+2023-03-03 16:31:08,546 views.py[line:49] INFO M:POST P:/webscan_backend/webweight UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:PC权重(10)，移动权重(10)，预计来路(10122233 ~ 12256422)  --数据来源于aizhan.com
+2023-03-03 16:31:09,766 views.py[line:76] INFO M:POST P:/webscan_backend/whatcms UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:未能识别或非cms框架搭建
+2023-03-03 16:31:10,565 views.py[line:90] INFO M:POST P:/webscan_backend/baseinfo UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:{'code': 200, 'msg': '查询成功', 'domain': 'www.baidu.com', 'server': 'BWS/1.1', 'language': 'nothing', 'ip': ['153.37.235.5 (Server Error)', '153.37.235.4 (Server Error)'], 'os': 'Linux', 'register': 'http://whois.chinaz.com/www.baidu.com'}
+2023-03-03 17:13:44,431 views.py[line:49] INFO M:POST P:/webscan_backend/webweight UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:获取数据失败，请稍再试
+2023-03-03 17:13:44,534 views.py[line:76] INFO M:POST P:/webscan_backend/whatcms UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:未能识别或非cms框架搭建
+2023-03-03 17:13:44,551 views.py[line:90] INFO M:POST P:/webscan_backend/baseinfo UPOST:<QueryDict: {'url': ['http://www.baidu.com']}> SC:200 UIP:127.0.0.1 RDATA:{'code': 400, 'msg': '网络错误'}

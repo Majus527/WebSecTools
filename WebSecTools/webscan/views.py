@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
-from webscan.models import PortList
+from webscan.models import PortList, FingerPrint, FpCategory
 
 
 # Create your views here.
@@ -17,7 +17,15 @@ def portscan(request):
 
 @login_required
 def fingerprint(request):
-    return render(request, 'scan/scan_fingerprint.html')
+    """指纹识别"""
+    cms_items = FingerPrint.objects.all()
+    categories = FpCategory.objects.all()
+    context = {
+        'cms_items': cms_items,
+        'categories': categories,
+
+    }
+    return render(request, 'scan/scan_fingerprint.html', context)
 
 
 @login_required

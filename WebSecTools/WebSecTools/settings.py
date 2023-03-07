@@ -141,8 +141,14 @@ EMAIL_FROM = '1564541144@qq.com'            # 邮箱账号
 DEFAULT_FROM_EMAIL = '1564541144@qq.com'    # 邮箱账号
 
 
+# AWVS URL和API key  服务器版本
+API_URL = 'https://192.168.71.132:3443'
+API_KEY = '1986ad8c0a5b3df4d7028d5f3c06e936c4a195afa2bd54d05a3203f1b066cdc52'
+
+
 STATICFILES_DIRS = (
     ('css', os.path.join(STATIC_ROOT, 'css').replace('\\', '/')),
     ('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
     ('images', os.path.join(STATIC_ROOT, 'images').replace('\\', '/')),
 )
+

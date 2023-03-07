@@ -116,25 +116,10 @@
       $table.bootstrapTable('destroy').bootstrapTable({
         exportDataType: $(this).val(),
         exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
-        {#columns: [#}
-        {#  {#}
-        {#    field: 'state',#}
-        {#    checkbox: true,#}
-        {#    visible: $(this).val() === 'selected'#}
-        {#  }#}
-        {#]#}
       })
     }).trigger('change')
   })
     </script>
 
 
-{#    <script>#}
-{#        $(function () {#}
-{#        setInterval(function () {#}
-{#            $("#refresh").load(location.href + " #refresh")#}
-            {#$.getScript("https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.js");#}
-{#        },1000)#}
-{#        })#}
-{#    </script>#}
 {% endblock %}

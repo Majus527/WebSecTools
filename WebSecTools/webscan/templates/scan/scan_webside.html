@@ -172,6 +172,9 @@
                     $('.scan-result').show();
                     get_webside_info(ip_addr);
                     get_ip_location(ip_addr);
+                    $(this).attr('disabled', false);
+                    $('.scan-btn').text() = '重新扫描'
+                    alert("11");
                 } else {
                     $('input[name=siteip]').val('');
                     layer.msg('请输入正确的IP地址，IP查询更精准！');

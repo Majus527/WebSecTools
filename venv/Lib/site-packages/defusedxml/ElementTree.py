@@ -9,6 +9,7 @@ from __future__ import print_function, absolute_import
 
 import sys
 import warnings
+from xml.etree.ElementTree import ParseError
 from xml.etree.ElementTree import TreeBuilder as _TreeBuilder
 from xml.etree.ElementTree import parse as _parse
 from xml.etree.ElementTree import tostring
@@ -20,7 +21,6 @@ if PY3:
 else:
     from xml.etree.ElementTree import XMLParser as _XMLParser
     from xml.etree.ElementTree import iterparse as _iterparse
-    from xml.etree.ElementTree import ParseError
 
 
 from .common import (
@@ -45,22 +45,33 @@ def _get_py3_cls():
     cmod = sys.modules.pop(cmodname, None)
 
     sys.modules[cmodname] = None
-    pure_pymod = importlib.import_module(pymodname)
-    if cmod is not None:
-        sys.modules[cmodname] = cmod
-    else:
-        sys.modules.pop(cmodname)
-    sys.modules[pymodname] = pymod
+    try:
+        pure_pymod = importlib.import_module(pymodname)
+    finally:
+        # restore module
+        sys.modules[pymodname] = pymod
+        if cmod is not None:
+            sys.modules[cmodname] = cmod
+        else:
+            sys.modules.pop(cmodname, None)
+        # restore attribute on original package
+        etree_pkg = sys.modules["xml.etree"]
+        if pymod is not None:
+            etree_pkg.ElementTree = pymod
+        elif hasattr(etree_pkg, "ElementTree"):
+            del etree_pkg.ElementTree
 
     _XMLParser = pure_pymod.XMLParser
     _iterparse = pure_pymod.iterparse
-    ParseError = pure_pymod.ParseError
+    # patch pure module to use ParseError from C extension
+    pure_pymod.ParseError = ParseError
 
-    return _XMLParser, _iterparse, ParseError
+    return _XMLParser, _iterparse
 
 
 if PY3:
-    _XMLParser, _iterparse, ParseError = _get_py3_cls()
+    _XMLParser, _iterparse = _get_py3_cls()
+
 
 _sentinel = object()
 
